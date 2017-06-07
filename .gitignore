@@ -1,6 +1,6 @@
 bin/
 .classpath
-.prject
+.project
 build.properties
 build.xml
 *.class

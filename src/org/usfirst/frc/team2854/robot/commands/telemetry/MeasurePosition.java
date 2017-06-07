@@ -15,7 +15,8 @@ public class MeasurePosition extends Command {
 
 	protected void execute() {
 		positionMagnitude = (float) Robot.tm.avgEncoder() - positionMagnitude;
-		Robot.position = Vec2f.add(Robot.position, new Vec2f(positionMagnitude, Robot.tm.gyro.getAngle()));
+		Robot.position = Vec2f.add(Robot.position, new Vec2f(positionMagnitude, Robot.tm.gyro.getAngle()));//This is primarily an approximation. 
+		//TODO Check if the gyro has an output of degress or radians, and adjust accordingly
 	}
 
 	@Override
