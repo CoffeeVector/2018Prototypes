@@ -1,3 +1,5 @@
+package visual;
+
 import java.awt.AWTException;
 import java.awt.Color;
 import java.awt.Dimension;
